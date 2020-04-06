@@ -6,23 +6,23 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "bookModel")
 public class BookModel {
 	@Id
-	private Integer _id;
+	private Integer b_id;
 	private String book;
 	
 	
-	public BookModel(Integer _id, String book) {
-        this._id = _id;
+	public BookModel(Integer b_id, String book) {
+        this.b_id = b_id;
         this.book = book;
     }
 	
 	public Integer getB_id()
 	{
-		return _id;
+		return b_id;
 	}
 	
 	public void setB_id()
 	{
-		this._id=_id;
+		this.b_id=b_id;
 	}
 	
 	public String getBook()

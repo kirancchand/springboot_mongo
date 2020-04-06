@@ -7,25 +7,25 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @Document(collection = "authorModel")
 public class AuthorModel {
 	@Id
-	private Integer _id;
+	private Integer a_id;
 	
 	@Field
 	private String author;
 	
 	
-	public AuthorModel(Integer _id, String author) {
-        this._id = _id;
+	public AuthorModel(Integer a_id, String author) {
+        this.a_id = a_id;
         this.author = author;
     }
 
 	
 	public Integer getA_id()
 	{
-		return _id;
+		return a_id;
 	}
 	public void setA_id()
 	{
-		this._id=_id;
+		this.a_id=a_id;
 	}
 	
 	public String getAuthor()

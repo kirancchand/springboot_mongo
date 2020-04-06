@@ -59,7 +59,7 @@ public class AuthorBookDALImpl implements AuthorBookDAL {
                 .as("book");
         
         Aggregation aggregation = Aggregation
-                .newAggregation(lookupBook,lookupAuthor);
+                .newAggregation(match(Criteria.where("f_a_id").gt(2)),lookupBook,lookupAuthor);
 
         List<AuthorBookModel> results = mongoTemplate
                 .aggregate(aggregation, 
