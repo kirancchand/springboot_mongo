@@ -12,4 +12,5 @@ public interface AuthorBookDAL {
 //	Object
 	AuthorBookModel getByab_id(Integer ab_id);
 
+	List<AuthorBookModel> getAggregagateAll();
 }

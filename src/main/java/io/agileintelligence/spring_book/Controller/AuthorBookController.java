@@ -68,5 +68,13 @@ public class AuthorBookController {
 		return authorbookDAL.getAll();
 	}
 	
+	@RequestMapping(value="/getaggregateall",method = RequestMethod.GET)
+	public List<AuthorBookModel> getAggregagateAll()
+	{
+		LOG.info("Get all aggregate User");
+//		return authorbookInterface.findAll();
+		return authorbookDAL.getAggregagateAll();
+	}
+	
 
 }
